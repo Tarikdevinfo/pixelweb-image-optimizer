@@ -1,0 +1,59 @@
+/* Pixelweb Image Optimizer – admin */
+.pixelweb-wrap { max-width: 1200px; }
+.pixelweb-header { display: flex; align-items: center; gap: 12px; margin: 8px 0 20px; padding: 12px 0 16px; border-bottom: 1px solid #dcdcde; }
+.pixelweb-header h1 { font-size: 24px; font-weight: 600; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; }
+.pixelweb-logo { width: 36px; height: 36px; display: block; }
+.pixelweb-version { background: #e21421; color: #fff; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+
+.pixelweb-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.pixelweb-card { position: relative; background: #fff; border: 1px solid #dcdcde; border-radius: 10px; padding: 20px; text-align: center; }
+.pixelweb-card-wide { text-align: left; margin-bottom: 20px; }
+.pixelweb-card-wide h2 { font-size: 16px; margin: 0 0 12px; }
+.pixelweb-card-value { font-size: 28px; font-weight: 700; color: #193061; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.pixelweb-card-label { font-size: 13px; color: #646970; margin-top: 4px; }
+.pixelweb-muted { color: #646970; }
+.pixelweb-ok { color: #008a20; }
+.pixelweb-err { color: #b32d2e; }
+
+.pixelweb-progress-bar { background: #f0f0f1; border-radius: 999px; height: 24px; overflow: hidden; margin: 14px 0; }
+.pixelweb-progress-fill { background: #193061; height: 100%; border-radius: 999px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 600; min-width: 36px; transition: width .4s ease; }
+
+.pixelweb-bulk-controls { display: flex; align-items: center; gap: 14px; margin: 16px 0; flex-wrap: wrap; }
+.pixelweb-bulk-log { max-height: 280px; overflow-y: auto; font: 12px/1.6 Menlo, Consolas, monospace; background: #1d2327; color: #c3c4c7; padding: 12px 14px; border-radius: 8px; }
+.pixelweb-bulk-log .log-success { color: #7ad03a; }
+.pixelweb-bulk-log .log-error { color: #f86368; }
+.pixelweb-bulk-log .log-info { color: #9ec2e6; }
+
+.pixelweb-toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.pixelweb-seo-table { margin-top: 12px; }
+.pixelweb-seo-table td { vertical-align: middle; }
+.pixelweb-col-thumb { width: 56px; }
+.pixelweb-col-thumb img { border-radius: 4px; object-fit: cover; display: block; }
+.pixelweb-alt-cell { display: flex; gap: 6px; align-items: center; }
+.pixelweb-alt-input { flex: 1; min-width: 160px; }
+.pixelweb-pager { margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+.pixelweb-flash td { background: #edfaef !important; transition: background .3s; }
+
+.pixelweb-score { display: inline-block; min-width: 42px; text-align: center; padding: 2px 8px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.pixelweb-score-good { background: #edfaef; color: #00691a; }
+.pixelweb-score-ok { background: #fcf9e8; color: #8a6100; }
+.pixelweb-score-poor { background: #fcf0f1; color: #a00; }
+
+.pixelweb-upsell { background: #f2f4fa; border-color: #c5cee3; border-left: 4px solid #e21421; }
+.pixelweb-dismiss { position: absolute; top: 8px; right: 10px; border: 0; background: none; font-size: 20px; line-height: 1; cursor: pointer; color: #646970; }
+
+#pixelweb-settings-form h2 { margin-top: 24px; padding-top: 16px; border-top: 1px solid #f0f0f1; }
+#pixelweb-settings-form h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+#pixelweb-settings-form input[type="range"] { vertical-align: middle; width: 220px; }
+.pixelweb-status .button { margin-top: 2px; }
+.column-pixelweb_status, .column-pixelweb_seo { width: 180px; }
+
+@media (max-width: 782px) {
+	.pixelweb-stats-grid { grid-template-columns: repeat(2, 1fr); }
+	.pixelweb-alt-cell { flex-wrap: wrap; }
+}
+
+/* Brand: navy #193061, red #e21421 */
+.pixelweb-wrap .button-primary { background: #193061; border-color: #193061; }
+.pixelweb-wrap .button-primary:hover, .pixelweb-wrap .button-primary:focus { background: #0f2048; border-color: #0f2048; }
+.pixelweb-wrap .button:not(.button-primary):not(.button-link-delete) { color: #193061; border-color: #193061; }

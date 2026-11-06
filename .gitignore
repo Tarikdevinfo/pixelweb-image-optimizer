@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+
+# Dependencies / build
+node_modules/
+vendor/
+*.log
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+wp-config.php
+*.sql
+
+# WordPress SVN
+.svn/
